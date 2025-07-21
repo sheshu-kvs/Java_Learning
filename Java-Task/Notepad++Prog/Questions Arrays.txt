@@ -1,0 +1,124 @@
+# **50 Coding Questions on Arrays (1D & 2D) - Traversal, Searching, Sorting**  
+*(In Java, with Difficulty Levels)*  
+
+Since you're struggling with programming logic, I’ll categorize questions from **easy to hard** and include **hints** to guide your thinking.  
+
+---
+
+## **1D Arrays**  
+### **Traversal (Easy)**
+1. **Print all elements of an array.**  
+   *(Hint: Use a `for` loop.)*  
+2. **Print elements in reverse order.**  
+3. **Print alternate elements (every 2nd element).**  
+4. **Count the number of elements in an array.**  
+5. **Print even-indexed elements (0, 2, 4, ...).**  
+
+### **Searching (Easy-Medium)**
+6. **Find the index of a given element (Linear Search).**  
+7. **Check if an element exists in an array.**  
+8. **Find the largest element in an array.**  
+9. **Find the smallest element in an array.**  
+10. **Count occurrences of a number in an array.**  
+11. **Find the last occurrence of an element.**  
+12. **Find pairs of elements that sum to a target value.**  
+13. **Find the missing number in a sequence (1 to n).**  
+14. **Find the first non-repeating element.**  
+15. **Check if an array is a palindrome (reads the same backward).**  
+
+### **Sorting (Medium)**
+16. **Sort an array in ascending order (Bubble Sort).**  
+17. **Sort an array in descending order.**  
+18. **Find the second-largest element in an array.**  
+19. **Find the Kth smallest element (without full sorting).**  
+20. **Separate even and odd numbers in an array.**  
+21. **Move all zeros to the end of the array.**  
+22. **Merge two sorted arrays into one sorted array.**  
+23. **Remove duplicates from a sorted array.**  
+24. **Find the intersection of two arrays (common elements).**  
+25. **Find the union of two arrays (all unique elements).**  
+
+---
+
+## **2D Arrays (Matrices)**  
+### **Traversal (Easy-Medium)**
+26. **Print all elements of a 2D array (row-wise).**  
+27. **Print elements column-wise.**  
+28. **Print the matrix in spiral order.**  
+29. **Print the boundary elements of a matrix.**  
+30. **Print the diagonals of a square matrix.**  
+
+### **Searching (Medium)**
+31. **Search for an element in a 2D array (Linear Search).**  
+32. **Find the row with the maximum number of 1s (binary matrix).**  
+33. **Find the largest element in each row.**  
+34. **Check if a matrix is symmetric (matrix = transpose).**  
+35. **Find the sum of all elements in a matrix.**  
+
+### **Sorting & Operations (Medium-Hard)**
+36. **Sort each row of a matrix in ascending order.**  
+37. **Sort the matrix column-wise.**  
+38. **Rotate a matrix by 90 degrees (clockwise).**  
+39. **Transpose a matrix (rows become columns).**  
+40. **Multiply two matrices (if possible).**  
+41. **Check if a matrix is an identity matrix (diagonals=1, others=0).**  
+42. **Find the sum of the main diagonal (left-top to right-bottom).**  
+43. **Find the sum of the anti-diagonal (right-top to left-bottom).**  
+44. **Replace all zeros with the sum of their neighbors.**  
+45. **Find the number of islands in a binary matrix (group of connected 1s).**  
+
+---
+
+## **Mixed Challenges (Hard)**
+46. **Find the longest consecutive sequence in an unsorted array.**  
+47. **Find all triplets that sum to zero (avoid duplicates).**  
+48. **Find the maximum subarray sum (Kadane’s Algorithm).**  
+49. **Find the smallest missing positive integer in an unsorted array.**  
+50. **Implement the "Dutch National Flag" problem (sort 0s, 1s, 2s).**  
+
+---
+
+## **How to Approach These Problems?**  
+1. **Start with Easy Questions** (1-10) → Build confidence.  
+2. **Write Pseudocode First** → Plan logic before coding.  
+3. **Dry Run on Paper** → Take a small example and simulate the code.  
+4. **Debug with `System.out.println()`** → Print variables at each step.  
+5. **Compare with Solutions** → If stuck, check logic but rewrite it yourself.  
+
+---
+
+## **Example Solution (Q6: Linear Search)**
+```java
+public class LinearSearch {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+        int target = 30;
+        int index = -1; // Default if not found
+        
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                index = i;
+                break;
+            }
+        }
+        
+        if (index != -1) {
+            System.out.println("Found at index: " + index);
+        } else {
+            System.out.println("Not found!");
+        }
+    }
+}
+```
+
+---
+
+### **Need Help?**  
+If you're stuck on a specific problem, share:  
+1. Your approach (what you tried).  
+2. Where you’re confused (e.g., loop condition, logic error).  
+3. A sample input and expected output.  
+
+I’ll help you break it down step by step! 🚀  
+
+Would you like solutions to any particular question?

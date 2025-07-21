@@ -1,0 +1,142 @@
+1. Write a Java program to check if a number is even or odd.
+A)public class dem{
+public static void main(String[] args){
+Scanner scan=new Scanner(System.in);
+int num=scan.nextInt();
+if(num%2==0){
+System.out.println("even");
+}
+else{
+System.out.println("odd");
+}
+}
+}
+
+2. How is a 'switch' different from 'if-else'?
+A)A Switch operation is the multi-way branch is used to execute the operation based on the value.
+->it used to perform the operations based on the specific values.
+->here we use the cases. we check the multiple cases, untill the given expression is satisfied.
+
+if-else
+->it executes the block of the code if the given condition is false.
+
+In the switch we are using the multiple cases untill the given expression is satisfied. coming to 
+the if-else we check only one condition..if the condition is true it will print that block, other
+wise it will go to the else block..
+
+3. Write a program to print numbers from 1 to 10 using a loop.
+A)
+public class demo{
+public static void main(String args[]){
+for(int i=0;i<=10;i++){
+System.out.println(i);
+}
+}
+
+4. What is the difference between while and do-while loops?
+
+A)
+A while loop are used to execute the statements untill the given condition is false.
+
+
+A do-while loop are used to execute the atleast once before  checking the condition.
+
+
+5. Write a method to calculate the factorial of a number.
+A)
+public class dem{
+public static void main(String[] args){
+Scanner scan=new Scanner(System.in);
+int num=scan.nextInt();
+fact1(num);
+}
+public static void fact1(int num){
+int fact=1;
+for(int i=num;i>=1;i--){
+fact=fact*i;
+}
+System.out.println(fact);
+}
+
+6. Demonstrate method overloading with an example.
+A)A Method Overloading is the process of the creating the multiple methods with same name number of
+the parameters to be different..
+class met{
+
+static void add(int a,int b){
+System.out.println("The Sum of the Two Numbers"+(a+b));
+}
+
+static void add(int a,int b,int c){
+System.out.println("The Sum of the Two Numbers"+(a+b+c));
+}
+}
+
+public class dem{
+public static void main(String[] args){
+met.add(10,20);
+met.add(10,20,30);
+
+}
+}
+
+7. How do you declare and initialize a 2D array in Java?
+A) an 2d Array is the number of the rows X number of the columns in the array..
+example :we can specify the 2d Array like this 
+a[rows][columns].
+
+
+public class dem{
+public static void main(Sting[] args){
+int a[][]={{1,2,3},{4,5,6}}
+System.out.println(a[0][1]));
+}
+}
+
+
+8. Write a program to reverse an array.
+A)
+public class dem{
+public static void main(String[] args){
+Scanner scan=new Scanner(System.in);
+int num=scan.nextInt();
+int a[]=new int[num];
+for(int i=0;i<a.length;i++){
+a[i]=scan.nextInt();
+}
+
+rever(a);
+}
+public static void rever(int a[]){
+for(int i=a.length-1;i>=0;i--){
+System.out.println(i);
+}
+}
+
+
+9. What is the output of 'Hello'.charAt(1)?
+A) Output:e
+
+
+
+10. Explain the use of equals() vs == for strings.
+A)equals():
+An equals method are  used to compare the values. It is also the
+Case-Sensitive which means both comparing the values should be the
+same case. If we ignore the case means we can use the equalsIgnoreCase.
+
+
+== :
+An == expression used to compare the references.
+for example:
+public class dem{
+public static void main(String[] args){
+String s1="Alex";
+String s2="dlex";
+String s3=new String("Dev");
+System.out.println(s1==s2);
+\\True..
+System.out.println(s1==s3);
+//False..
+}
+}
