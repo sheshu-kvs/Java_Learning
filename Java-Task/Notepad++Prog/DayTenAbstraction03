@@ -1,0 +1,50 @@
+/*Abstraction:
+-> an Abstraction is the hiding the implementation details showing only essential information to the user..
+-> with the abstract class we cannot create the objects ..
+-> an abstract class can have the normal methods and the abstract methods..
+-> an abstract class can extend the normal class.
+-> an normal class can extend the abstract class.
+-> with the abstract keyword we cannot create the objects..or cannot instantiate the objects..
+-> in a class with the abstract methods we cannot create the objects...
+*/
+ abstract class Bird{
+	abstract  void eat();
+	abstract   void fly();
+
+}
+abstract class Eagle extends Bird{
+	abstract void eat();
+	void fly(){
+		System.out.println("An Eagle can fly at the higher heigths..");
+	}
+
+}
+class serpentEagle extends Eagle{
+	void eat(){
+		System.out.println("An serpentEagle can eat the food..");
+	}
+	void fly(){
+		System.out.println("An serpentEagle can fly at the normal speed..");
+	}
+}
+
+class GoldenEagle extends Eagle	{
+	void eat(){
+		System.out.println("An GoldenEagle can eat the normal food. ");
+	}
+	void fly(){
+		System.out.println("An golden eagle can fly at normal speed compare to the others..");
+	}
+}
+public class DayTenAbstractionInterfaces03{
+public static void main(String[] args){
+	// Bird b1=new Bird();
+	// Eagle e1=new Eagle();
+	serpentEagle s1=new serpentEagle();
+	s1.eat();
+	s1.fly();
+	GoldenEagle g1=new GoldenEagle();
+	g1.eat();
+	g1.fly();
+}
+}
