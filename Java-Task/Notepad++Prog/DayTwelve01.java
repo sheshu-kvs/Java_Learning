@@ -201,8 +201,8 @@ public class DayTwelve01{
 		try{
 			FileReader FR=new FileReader("file.txt");
 			int ch;
-			while((FR.read()!=-1)){
-				System.out.println((char)FR);
+			while((ch=FR.read()!=-1)){
+				System.out.println((char)FR																					);
 			}
 		}
 		catch(Exception e){
@@ -211,3 +211,21 @@ public class DayTwelve01{
 		
 	}
 }
+
+
+// ===BufferedReader==
+// It is efficient for the Reading the Data it wraps up FileReader
+
+// import java.io.FileReader;
+// import java.io.BufferedReader;
+// public class DayTwelve01{
+	// public static void main(String[] args){
+		// BufferedReader br=new BufferedReader(new FileReader("file.text"));
+		// String line;
+		// while((line=br.readLine())!null){
+			
+			// System.out.println(l);
+		// }
+	
+	// }
+// }

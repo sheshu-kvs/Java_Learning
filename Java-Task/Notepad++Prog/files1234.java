@@ -148,30 +148,56 @@
 
 
  
-import java.io.FileNotFoundException;
-import java.io.IOException;
+// import java.io.FileNotFoundException;
+// import java.io.IOException;
+// import java.io.File;
+// import java.io.FileReader;
+// import java.io.BufferedReader;
+// public class files1234{
+// public static void main(String[] args){ 
+// try{
+	// File fll=new File("C:\\Users\\vijitha\\Desktop\\files\\BR.txt");
+	// FileReader fr=new FileReader(fll);
+	// BufferedReader br=new BufferedReader(fr);
+	// String line=br.readLine();
+	
+	// while(line !=null){
+		// System.out.println(line);
+		// line=br.readLine();
+	// }
+
+// }
+// catch(FileNotFoundException fe){
+	// System.out.println(fe.getMessage());
+// }
+// catch(IOException ie){
+	// System.out.println(ie.getMessage());
+// }
+// }
+// }
+
+
+// ====BufferedWriter==== Important Note::whenever writing the file you need to close the file using the close()..
+
 import java.io.File;
-import java.io.FileReader;
-import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 public class files1234{
 public static void main(String[] args){ 
 try{
-	File fll=new File("C:\\Users\\vijitha\\Desktop\\files\\BR.txt");
-	FileReader fr=new FileReader(fll);
-	BufferedReader br=new BufferedReader(fr);
-	String line=br.readLine();
-	
-	while(line !=null){
-		System.out.println(line);
-		line=br.readLine();
-	}
-
+	File f1=new File("C:\\Users\\vijitha\\Desktop\\files\\BR.txt");
+    FileWriter fw=new FileWriter(f1);
+    BufferedWriter bw=new BufferedWriter(fw);
+    bw.write("New file to be added.");
+    bw.write("New file to be added.");
+    bw.write("New file to be added.");
+	bw.close();
 }
-catch(FileNotFoundException fe){
-	System.out.println(fe.getMessage());
-}
-catch(IOException ie){
-	System.out.println(ie.getMessage());
+catch(Exception e){
+	System.out.println(e.getMessage());
 }
 }
 }

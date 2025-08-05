@@ -5,7 +5,8 @@
 -> an abstract class can extend the normal class.
 -> an normal class can extend the abstract class.
 -> with the abstract keyword we cannot create the objects..or cannot instantiate the objects..
--> in a class with the abstract methods we cannot create the objects...
+-> In a class with the abstract methods we cannot create the objects...
+-> In a class any abstract method is there we need do declare the abstract keyword to the class..
 */
  abstract class Bird{
 	abstract  void eat();
@@ -40,11 +41,11 @@ public class DayTenAbstractionInterfaces03{
 public static void main(String[] args){
 	// Bird b1=new Bird();
 	// Eagle e1=new Eagle();
-	serpentEagle s1=new serpentEagle();
-	s1.eat();
-	s1.fly();
-	GoldenEagle g1=new GoldenEagle();
-	g1.eat();
-	g1.fly();
+	    serpentEagle s1=new serpentEagle();
+	      s1.eat();
+	      s1.fly();
+	    GoldenEagle g1=new GoldenEagle();
+	       g1.eat();
+	       g1.fly();
 }
 }
