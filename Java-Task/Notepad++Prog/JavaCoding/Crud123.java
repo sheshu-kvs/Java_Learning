@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 class Person{
@@ -49,7 +50,7 @@ class Person{
        return"Employee Details[Id:"+id+ " Name:"+name+ " PhNo:"+phno+ " email:"+email+"]";
     }
 }
-public class Person12 {
+public class Crud123 {
 
 
 
@@ -66,8 +67,8 @@ public class Person12 {
     //    int id,String name,String phno,String email
     person1213.add(new Person(1, "alex", "8978211926", "alex@gmail.com"));
     person1213.add(new Person(2, "Elon", "9008532514", "elon@gmail.com"));
-    person1213.add(new Person(1, "elex", "9878211926", "elex@gmail.com"));
-    person1213.add(new Person(1, "xavier", "8978211926", "xavier@gmail.com"));
+    person1213.add(new Person(3, "elex", "9878211926", "elex@gmail.com"));
+    person1213.add(new Person(4, "xavier", "8978211926", "xavier@gmail.com"));
         // person1213.add(new person(1, "Alex", "8978211926"));
         // person1213.add(new person(2, "Elon", "9008532514", "Elon@gmail.com"));
         // person1213.add(new person(3, "Tim", "7204375248", "Tim@gmail.com"));
@@ -258,7 +259,7 @@ public class Person12 {
         if(person1213.get(i).getId()==updateId){
             found=true;
             System.out.println("Hlo!! Employee what you want to update");
-            System.out.println("1:Name.");
+            System.out.println("1 Name");
             System.out.println("2 Phone Number");
             System.out.println("3 Email");
             char expr=scan.next().charAt(0);
@@ -373,6 +374,8 @@ public class Person12 {
 
         }
     }
+
+    
     
 
 

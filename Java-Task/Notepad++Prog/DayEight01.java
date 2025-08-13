@@ -12,7 +12,7 @@ public class DayEight01 {
               count++;
           }
           else{
-            if(count==1){n
+            if(count==1){
                 System.out.println(num[i]);
             }
             count=1;

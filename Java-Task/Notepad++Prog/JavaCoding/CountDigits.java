@@ -15,7 +15,7 @@ public class CountDigits {
         // System.out.println(count);
 int num=123;
         for(int i=0;i<num;i++){
-            int rem=num(i)%10;
+            // int rem=num(i)%10;
             count++;
             num=num/10;
         }
