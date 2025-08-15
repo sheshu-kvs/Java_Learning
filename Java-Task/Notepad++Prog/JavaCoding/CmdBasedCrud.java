@@ -1,3 +1,5 @@
+package JavaCoding;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -125,8 +127,8 @@ public class CmdBasedCrud{
     public static void main(String[] args) {
         // ===Adding the Employee Details===
         int IDIN=GenerateID(increm);
-        hashmap.put(IDIN,new Emp(IDIN, "Tim", "CEO", "tim@gmail.com", "7204375248", 45002.34));
-        // hashmap.put(IDIN,new Emp(IDIN, "Zeniva", "HR", "zeniva@gmail.com", "6303365716", 35002.34));
+        hashmap.put(IDIN,new Emp(increm, "Tim", "CEO", "tim@gmail.com", "7204375248", 45002.34));
+        hashmap.put(increm,new Emp(IDIN, "Zeniva", "HR", "zeniva@gmail.com", "6303365716", 35002.34));
         // hashmap.put(IDIN,new Emp(IDIN, "Tema", "IT", "tema@gmail.com", "65123456891", 39000.34));
         // hashmap.put(IDIN,new Emp(IDIN, "Daya", "BDE", "daya@gmail.com", "7802458599", 23000.34));
         // hashmap.put(IDIN,new Emp(IDIN, "tels", "CEO", "tels@gmail.com", "6523249505", 54002.34));

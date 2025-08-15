@@ -12,7 +12,7 @@ class Amy extends Thread {
         Scanner scan=new Scanner(System.in);
 
 
-         System.out.println("Enter the Number:");
+        System.out.println("Enter the Number:");
         int a=scan.nextInt();
         System.out.println("Enter the Second Number:");
         int b=scan.nextInt();
