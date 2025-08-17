@@ -19,9 +19,9 @@ class Res extends Thread{
         Thread.sleep(3000);
         System.out.println("Owner sees all the items prepared");
         Thread.sleep(3000);
-        System.out.println("");
-        Thread.sleep(3000);
-        System.out.println("");
+        // System.out.println("");
+        // Thread.sleep(3000);
+        // System.out.println("");
         Thread.sleep(3000);
         System.out.println("Restaurant Closed Tq!!");
        }
