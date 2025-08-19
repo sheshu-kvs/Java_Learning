@@ -126,16 +126,51 @@ public class CmdBasedCrud{
      private static int increm=1;
     public static void main(String[] args) {
         // ===Adding the Employee Details===
-        int IDIN=GenerateID(increm);
-        hashmap.put(IDIN,new Emp(increm, "Tim", "CEO", "tim@gmail.com", "7204375248", 45002.34));
-        hashmap.put(increm,new Emp(IDIN, "Zeniva", "HR", "zeniva@gmail.com", "6303365716", 35002.34));
-        // hashmap.put(IDIN,new Emp(IDIN, "Tema", "IT", "tema@gmail.com", "65123456891", 39000.34));
-        // hashmap.put(IDIN,new Emp(IDIN, "Daya", "BDE", "daya@gmail.com", "7802458599", 23000.34));
-        // hashmap.put(IDIN,new Emp(IDIN, "tels", "CEO", "tels@gmail.com", "6523249505", 54002.34));
-        // hashmap.put(IDIN,new Emp(IDIN, "dele", "CEO", "dele@gmail.com", "6300365912", 45002.34));
-        // hashmap.put(increm,new Emp(increm, "Cook", "HR", "cook@gmail.com", "7304351281", 54002.34));
+        // int IDIN=GenerateID(increm);
+        hashmap.put(increm,new Emp(increm++, "Tim", "CEO", "tim@gmail.com", "7204375248", 45002.34));
+        hashmap.put(increm,new Emp(increm++, "Zeniva", "HR", "zeniva@gmail.com", "6303365716", 35002.34));
+        hashmap.put(increm,new Emp(increm++, "Tema", "IT", "tema@gmail.com", "65123456891", 39000.34));
+        hashmap.put(increm,new Emp(increm++, "Daya", "BDE", "daya@gmail.com", "7802458599", 23000.34));
+        hashmap.put(increm,new Emp(increm++, "tels", "CEO", "tels@gmail.com", "6523249505", 54002.34));
+        hashmap.put(increm,new Emp(increm++, "dele", "CEO", "dele@gmail.com", "6300365912", 45002.34));
+        hashmap.put(increm,new Emp(increm++, "Cook", "HR", "cook@gmail.com", "7304351281", 54002.34));
        
-System.out.println("******Welcome to the Employee DataBase*****");
+            System.out.println("******Welcome to the Employee DataBase*****");
+                String t="""
+                        For adding the values::
+                        ->add "Name" "Role" "tim@gmail.com" "9192929229" 490000.023
+
+                        For Update the Values::
+                        ->update 1 salary 9000.23
+
+                        For Delete Values::
+                        ->delete 1
+
+                        For list of the Values::
+                        ->list
+                        """;
+                        System.out.println(t);
+            //  System.out.println("----Help-----");
+            // String expr=scan.next().toLowerCase();
+            // switch(expr){
+            //     case"help":
+            //     System.out.println("Hlo welcome to the Employee Database!!");
+            //     String t="""
+            //             For adding the values::
+            //             ->add "Alex" "IT" "tim@gmail.com" "9192929229" 490000.023
+            //             For Update the Values::
+            //             ->update 1 salary 9000.23
+            //             For Delete Values::
+            //             ->delete 1
+            //             For list of the Values::
+            //             ->list
+            //             """;
+            //             System.out.println(t);
+            //             break;
+            //             default:
+            //             System.out.println("Please Enter the Valid Format!!");
+            // }
+
 
 
 
@@ -144,6 +179,7 @@ System.out.println("******Welcome to the Employee DataBase*****");
         while(running){
 
         System.out.print(">");
+    
         String s1=scan.nextLine().trim();
         String[] comand=s1.split(" ");
         switch(comand[0].toLowerCase()){
@@ -264,7 +300,7 @@ System.out.println("******Welcome to the Employee DataBase*****");
         if(hashmap.containsKey(deletedId)){
             found=true;
             hashmap.remove(deletedId);
-             System.out.println("Hi Employee"+deletedId+"Succesfully deleted");
+             System.out.println("Hi Employee "+deletedId+" Succesfully deleted");
         }
         else{
             System.out.println("Entered Id is the Not present in the Employee DB.."+deletedId);
