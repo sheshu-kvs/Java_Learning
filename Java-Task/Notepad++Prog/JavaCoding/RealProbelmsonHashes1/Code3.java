@@ -1,4 +1,4 @@
-package RealProbelmsonHashes1;
+package JavaCoding.RealProbelmsonHashes1;
 
 public interface Code3 {
     public static void main(String[] args) {

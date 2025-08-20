@@ -1,4 +1,4 @@
-package RealProbelmsonHashes1;
+package JavaCoding.RealProbelmsonHashes1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -26,19 +26,16 @@ public class InsertValuesArray {
                   a1.add(num);
                   break;
             case"delete":
+           
+                 
             boolean found1=false;
             int deleteId=Integer.parseInt(command[1].replace("\"",""));
-            // a1.remove(deleteId);
-            // for(int i=0;i<a1.size();i++){
-            //         if(a1.get(i)==deleteId){
-            //         a1.remove(Integer.valueOf(deleteId));
-            //         found1=true;
-            //         }
-            //     }
+            
             Iterator<Integer> iter=a1.iterator();
             while(iter.hasNext()){
                 int id=iter.next();
                 if(id==deleteId){
+                    found1=true;
                    iter.remove();
                 }
                 
@@ -51,7 +48,15 @@ public class InsertValuesArray {
                 }
             break;
             case"get":
-            boolean found=false;
+            if(command.length<2){
+                 String t="""
+                       Hey User Please Follow the Format
+                      >get 2
+                      """;
+                      System.out.println(t);
+                      break;
+                   }
+                boolean found=false;
                 int id=Integer.parseInt(command[1].replace("\"",""));
                 for(int i=0;i<a1.size();i++){
                     if(a1.get(i)==id){

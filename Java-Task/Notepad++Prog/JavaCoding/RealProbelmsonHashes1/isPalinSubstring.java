@@ -1,8 +1,8 @@
-package RealProbelmsonHashes1;
+package JavaCoding.RealProbelmsonHashes1;
 
 public class isPalinSubstring {
     public static void main(String[] args) {
-        String s1="aab";
+        String s1="aabbcbc";
         int valu=minCut(s1);
         System.out.println(valu);
         // pairs(s1);
@@ -25,12 +25,14 @@ public class isPalinSubstring {
             }
         }
     }
+    
 
     
     int[] dp = new int[n];
     for (int i = 0; i < n; i++) {
         if (isPalindrome[0][i]) {
             dp[i] = 0;
+            //  System.out.println("dp[" + i + "] = " + dp[i] + " (entire substring is palindrome)");
         } else {
             dp[i] = i; //here it will cut 
             for (int j = 0; j < i; j++) {
@@ -40,8 +42,11 @@ public class isPalinSubstring {
             }
         }
     }
-
+    
+System.out.println(" ");
+    // System.out.println("final cut values "+java.util.Arrays.toString(dp));
     return dp[n - 1];
+   
 }
 
     public static void pairs(String s){

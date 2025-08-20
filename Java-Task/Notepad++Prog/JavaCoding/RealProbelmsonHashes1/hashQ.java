@@ -1,4 +1,4 @@
-package RealProbelmsonHashes1;
+package JavaCoding.RealProbelmsonHashes1;
 
 import java.util.*;
 

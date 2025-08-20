@@ -1,4 +1,4 @@
-package JavaCoding;
+
 
 public class Sum {
     public static void main(String[] args) {

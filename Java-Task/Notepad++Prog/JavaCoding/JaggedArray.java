@@ -18,32 +18,41 @@ public class JaggedArray {
 
 
     Scanner scan=new Scanner(System.in);
-    int a[][]=new int[2][];
-  a[0]=new int[3];
-  a[1]=new int[5];
+    int a[][]=new int[3][3];
 
-System.out.println(a[0].length);
-System.out.println(a[1].length);
-for(int i=0;i<a[2][3];i++){
-    for(int j=0;j<a[i][0];j++){
+    int n=a.length;
 
-    }
-}
-
-//   for(int i=0;i<a[0].length;i++){
-//     for(int j=0;j<a[1].length;j++){
-//         a[i][j]=scan.nextInt();
-//     }
-//   }
+    a[0][0]=10;
+    a[0][1]=20;
+    a[0][2]=30;
+    a[1][0]=40;
+    a[1][1]=50;
+    a[1][2]=60;
+    a[2][0]=70;
+    a[2][1]=80;
+    a[2][2]=90;
 
 
+    System.out.print(" "+a[0][0]);
+    System.out.print(" "+a[0][1]);
+    System.out.print(" "+a[0][2]);
+    System.out.println(" ");
+    System.out.print(" "+a[1][0]);
+    System.out.print(" "+a[1][1]);
+    System.out.print(" "+a[1][2]);
+     System.out.println(" ");
+    System.out.print(" "+a[2][0]);
+    System.out.print(" "+a[2][1]);
+    System.out.print(" "+a[2][2]);
 
-   
-// for(int i=0;i<a[2][3];i++){
-//     for(int j=0;j<a[i].length;j++){
-//         System.out.println(a[i][j]);
-//     }
-// }
+
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n;j++){
+    //         System.out.print(a);
+    //     }
+    // }
+  
 
 
     }
